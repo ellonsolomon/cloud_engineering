@@ -1,0 +1,10 @@
+# Database Dockerfile
+FROM postgres:15-alpine
+
+# Set environment variables
+ENV POSTGRES_PASSWORD=postgres
+ENV POSTGRES_USER=postgres
+ENV POSTGRES_DB=app_database
+
+# Expose PostgreSQL port
+EXPOSE 5432
